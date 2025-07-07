@@ -1,4 +1,13 @@
+/* ==========
+Global styles
+========== */
+
+* {
+    box-sizing: border-box;
+}
+
 body {
+    margin: 0;
     background-image: url("train-platform.jpg");
     background-size: cover;
     background-position: center;
@@ -12,6 +21,10 @@ body {
     align-items: center;
 }
 
+/* ==========
+Typography
+========== */
+
 h1 {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -23,13 +36,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-.container {
-    max-width: 90%;
-    margin: 0 auto;
-    background-color: rgba(33, 33, 33, .85);
-    border-radius: 10px;
-    padding: 1em;
-}
+/* Buttons */
 
 button {
     border: none;
@@ -42,6 +49,8 @@ button {
     border-radius: 5px;
     box-shadow: 0 0 5px #000;
     transition: 250ms;
+    margin: .5em;
+    cursor: pointer;
 }
 
 button:hover {
@@ -54,4 +63,14 @@ button:hover {
 
 #save-btn {
     background: #1976D2;
+}
+
+/* Layout */
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    background-color: rgba(33, 33, 33, .85);
+    border-radius: 10px;
+    padding: 1em;
 }
